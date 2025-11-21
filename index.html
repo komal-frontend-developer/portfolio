@@ -1,83 +1,90 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Komal Kanwar Portfolio</title>
-<link href="./output.css" rel="stylesheet">
-<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
-    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Komal Kanwar Portfolio</title>
+  <link href="./output.css" rel="stylesheet">
+  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+ 
+
 
 </head>
-<body class="bg-gray-900 text-gray-100 scroll-smooth">
 
-<!-- Header -->
-<header class="bg-[#071122] w-full z-50 shadow-lg">
-  <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+<body class="bg-gray-900 text-gray-100 scroll-smooth ">
 
-    <!-- LOGO -->
-    <h1 class="text-2xl font-bold bg-gradient-to-br from-[#2b68e0] to-[#e710ea] text-transparent bg-clip-text">
-      Komal Kanwar
-    </h1>
+  <!-- Header -->
+  <header class="bg-[#071122] w-full z-50 shadow-lg fixed">
+    <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
 
-    <!-- DESKTOP MENU -->
-    <ul class="hidden md:flex items-center gap-8 text-gray-200 font-medium">
-      <li><a href="#" class="hover:text-[#e710ea]">Home</a></li>
-      <li><a href="#" class="hover:text-[#e710ea]">About</a></li>
-      <li><a href="#" class="hover:text-[#e710ea]">Experience</a></li>
-      <li><a href="#" class="hover:text-[#e710ea]">Projects</a></li>
-      <li><a href="#" class="hover:text-[#e710ea]">Contact Us</a></li>
-    </ul>
+      <!-- LOGO -->
+      <h1 class="text-2xl font-bold bg-gradient-to-br from-[#2b68e0] to-[#e710ea] text-transparent bg-clip-text">
+        Komal Kanwar
+      </h1>
 
-    <!-- MOBILE MENU ICON -->
-    <ion-icon 
-      name="menu" 
-      id="menuIcon"
-      class="text-3xl text-white md:hidden cursor-pointer"
-      onclick="toggleMenu()">
-    </ion-icon>
-  </nav>
+      <!-- DESKTOP MENU -->
+      <ul class="hidden md:flex items-center gap-8 text-gray-200 font-medium">
+        <li><a href="#" class="hover:text-[#e710ea]">Home</a></li>
+        <li><a href="#" class="hover:text-[#e710ea]">About</a></li>
+        <li><a href="#" class="hover:text-[#e710ea]">Experience</a></li>
+        <li><a href="#" class="hover:text-[#e710ea]">Projects</a></li>
+        <li><a href="#" class="hover:text-[#e710ea]">Contact Us</a></li>
+      </ul>
 
-  <!-- MOBILE MENU (Pushes content down) -->
-  <div id="mobileMenu" 
-       class="hidden flex-col bg-[#071122] text-gray-200 py-6 px-6 space-y-6 shadow-inner md:hidden transition-all duration-300">
-    <a href="#" class="hover:text-[#e710ea] block">Home</a>
-    <a href="#" class="hover:text-[#e710ea] block">About</a>
-    <a href="#" class="hover:text-[#e710ea] block">Experience</a>
-    <a href="#" class="hover:text-[#e710ea] block">Projects</a>
-    <a href="#" class="hover:text-[#e710ea] block">Contact Us</a>
-  </div>
-</header>
+      <!-- MOBILE MENU ICON -->
+      <ion-icon name="menu" id="menuIcon" class="text-3xl text-white md:hidden cursor-pointer" onclick="toggleMenu()">
+      </ion-icon>
+    </nav>
+
+    <!-- MOBILE MENU (Pushes content down) -->
+    <div id="mobileMenu"
+      class="hidden flex-col bg-[#071122] text-gray-200 py-6 px-6 space-y-6 shadow-inner md:hidden transition-all duration-300">
+      <a href="#" class="hover:text-[#e710ea] block">Home</a>
+      <a href="#" class="hover:text-[#e710ea] block">About</a>
+      <a href="#" class="hover:text-[#e710ea] block">Experience</a>
+      <a href="#" class="hover:text-[#e710ea] block">Projects</a>
+      <a href="#" class="hover:text-[#e710ea] block">Contact Us</a>
+    </div>
+  </header>
 
 
 
 
 
 
-<!-- Hero -->
+  <!-- Hero -->
   <section id="intro" class="min-h-screen flex items-center pt-24 px-10">
     <div class="container mx-auto px-6 grid lg:grid-cols-2 gap-10 items-center " data-aos="fade-right">
 
       <!-- LEFT: Text -->
       <div class="space-y-6 fade-up">
-        <p class="text-4xl sm:text-5xl md:text-6xl font-bold mb-4 bg-gradient-to-br from-[#2b68e0] to-[#e710ea] text-transparent bg-clip-text ">Hello, I'm Komal</p>
+        <p
+          class="text-4xl sm:text-5xl md:text-6xl font-bold mb-4 bg-gradient-to-br from-[#2b68e0] to-[#e710ea] text-transparent bg-clip-text ">
+          Hello, I'm Komal</p>
 
         <h1 class="text-3xl md:text-4xl lg:text-3xl leading-tight font-bold tracking-wider">
-  <span id="typewriter" class="text-3xl md:text-4xl lg:text-5xl leading-tight font-medium typewriter"></span>
-  <span class="typewriter-cursor"></span>
-</h1>
+          <span id="typewriter" class="text-3xl md:text-4xl lg:text-5xl leading-tight font-medium typewriter"></span>
+          <span class="typewriter-cursor"></span>
+        </h1>
 
         <p class="max-w-xl text-gray-300 text-lg">Frontend Developer | Web Designer </p>
 
         <div class="flex gap-4 items-center">
           <!-- <a href="#projects" class="inline-flex items-center gap-3 px-5 py-3 rounded-lg bg-amber-400 text-black font-semibold hover:scale-105 transition">See Projects</a>-->
 
-          <a href="#" download="Komal_CV.pdf" class="  hover:bg-clip-text hover:text-transparent bg-gradient-to-br from-[#2b68e0] to-[#e710ea] border-solid border-2 border-[#5356e3]  font-bold text-white px-5 py-2 rounded-full inline-flex items-center gap-2  transition"> 
+          <a href="#" download="Komal_CV.pdf"
+            class="  hover:bg-clip-text hover:text-transparent bg-gradient-to-br from-[#2b68e0] to-[#e710ea] border-solid border-2 border-[#5356e3]  font-bold text-white px-5 py-2 rounded-full inline-flex items-center gap-2  transition">
             <!-- download icon -->
-            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-gray-200" viewBox="0 0 20 20" fill="currentColor"><path d="M3 14a1 1 0 001 1h12a1 1 0 001-1v-3a1 1 0 10-2 0v2H5v-2a1 1 0 10-2 0v3z"/><path d="M7 7a1 1 0 011-1h2V3a1 1 0 112 0v3h2a1 1 0 011 1v1a1 1 0 11-2 0V8h-6v.999a1 1 0 11-2 0V8z"/></svg>
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-gray-200" viewBox="0 0 20 20"
+              fill="currentColor">
+              <path d="M3 14a1 1 0 001 1h12a1 1 0 001-1v-3a1 1 0 10-2 0v2H5v-2a1 1 0 10-2 0v3z" />
+              <path d="M7 7a1 1 0 011-1h2V3a1 1 0 112 0v3h2a1 1 0 011 1v1a1 1 0 11-2 0V8h-6v.999a1 1 0 11-2 0V8z" />
+            </svg>
             <span class="text-[18px]">Download CV</span>
           </a>
         </div>
@@ -86,10 +93,12 @@
 
       <!-- RIGHT: Image -->
       <div class="flex justify-center lg:justify-center fade-up">
-        <div class="w-[200px] lg:w-[280px] rounded-2xl overflow-hidden shadow-2xl ring-2 ring-[#8b5cf6]/40 shadow-[#8b5cf6]/30 transition-all duration-500 hover:shadow-[#8b5cf6]/60 hover:scale-[1.03]">
-  <img src="https://images.unsplash.com/photo-1529626455594-4ff0802cfb7e?auto=format&fit=crop&w=600&q=80" class="w-full h-full object-cover" />
-</div>
-</div>
+        <div
+          class="w-[200px] lg:w-[280px] rounded-2xl overflow-hidden shadow-2xl ring-2 ring-[#8b5cf6]/40 shadow-[#8b5cf6]/30 transition-all duration-500 hover:shadow-[#8b5cf6]/60 hover:scale-[1.03]">
+          <img src="https://images.unsplash.com/photo-1529626455594-4ff0802cfb7e?auto=format&fit=crop&w=600&q=80"
+            class="w-full h-full object-cover" />
+        </div>
+      </div>
 
     </div>
   </section>
@@ -102,7 +111,9 @@
 
         <div class="fade-up">
           <h2 class="text-4xl sm:text-5xl md:text-6xl  font-semibold mb-6">About Me</h2>
-          <p class="text-gray-300 mb-4">I’m a Frontend Developer and Web Designer with 3.8 years of experience in creating clean, responsive and user-friendly web interfaces. I turn UI ideas into real, functional websites using HTML, CSS, Bootstrap and Tailwind. I also design and refine layouts using Figma and Photoshop.</p>
+          <p class="text-gray-300 mb-4">I’m a Frontend Developer and Web Designer with 3.8 years of experience in
+            creating clean, responsive and user-friendly web interfaces. I turn UI ideas into real, functional websites
+            using HTML, CSS, Bootstrap and Tailwind. I also design and refine layouts using Figma and Photoshop.</p>
 
 
           <ul class="space-y-2 text-gray-300">
@@ -139,263 +150,385 @@
 
       <!-- Experience 1 -->
       <div class="relative group" data-aos="fade-right">
-        <div class="absolute left-[-59px] translate-x-1/2 top-[2px]-translate-y-1/2 w-5 h-5 bg-gradient-to-br from-[#2b68e0] to-[#e710ea]  rounded-full shadow z-10"></div>
+        <div
+          class="absolute left-[-59px] translate-x-1/2 top-[2px]-translate-y-1/2 w-5 h-5 bg-gradient-to-br from-[#2b68e0] to-[#e710ea]  rounded-full shadow z-10">
+        </div>
 
-        <div class="bg-[#071122] p-6 rounded-xl shadow hover:shadow-[#8b5cf6]/30 hover:scale-[1.03] transition-all duration-300">
+        <div
+          class="bg-[#071122] p-6 rounded-xl shadow hover:shadow-[#8b5cf6]/30 hover:scale-[1.03] transition-all duration-300">
           <h3 class="text-xl font-semibold text-white">Web Designer</h3>
           <p class="text-gray-400 text-sm">Proftcode Technology • Jaipur</p>
           <p class="text-gray-500 text-xs mt-1">Mar 2025 — Present</p>
 
           <ul class="mt-3 text-gray-300 text-sm space-y-1">
-            <li class="flex gap-2"><span>✔</span>Built responsive UI with Tailwind</li>
-            <li class="flex gap-2"><span>✔</span>Improved performance by 25%</li>
-            <li class="flex gap-2"><span>✔</span>Collaborated with designers</li>
+            <li class="flex gap-2"><span>✔</span>Building responsive website pages using HTML, CSS, Bootstrap, and
+              JavaScript</li>
+            <li class="flex gap-2"><span>✔</span>Updating existing websites and improving their layout, spacing, and
+              styling</li>
+            <li class="flex gap-2"><span>✔</span>Working on admin features like forms, user sections, and components
+            </li>
+            <li class="flex gap-2"><span>✔</span>Collaborating with the team to deliver clean and functional front-end
+              sections</li>
+            <li class="flex gap-2"><span>✔</span>Creating small creatives when needed (simple banners or web visuals)
+            </li>
           </ul>
         </div>
       </div>
 
       <!-- Experience 2 -->
       <div class="relative group" data-aos="fade-right" data-aos-delay="150">
-        <div class="absolute left-[-59px] translate-x-1/2 top-[2px]-translate-y-1/2 w-5 h-5 bg-gradient-to-br from-[#2b68e0] to-[#e710ea]  rounded-full shadow z-10"></div>
+        <div
+          class="absolute left-[-59px] translate-x-1/2 top-[2px]-translate-y-1/2 w-5 h-5 bg-gradient-to-br from-[#2b68e0] to-[#e710ea]  rounded-full shadow z-10">
+        </div>
 
-        <div class="bg-[#071122] p-6 rounded-xl shadow hover:shadow-[#8b5cf6]/30 hover:scale-[1.03] transition-all duration-300">
+        <div
+          class="bg-[#071122] p-6 rounded-xl shadow hover:shadow-[#8b5cf6]/30 hover:scale-[1.03] transition-all duration-300">
           <h3 class="text-xl font-semibold text-white">Web Designer</h3>
           <p class="text-gray-400 text-sm">Techno Derivation • Jaipur</p>
           <p class="text-gray-500 text-xs mt-1">DEc 2021 — Jan 2025</p>
 
           <ul class="mt-3 text-gray-300 text-sm space-y-1">
-            <li class="flex gap-2"><span>✔</span>Designed high‑fidelity prototypes</li>
-            <li class="flex gap-2"><span>✔</span>Created a complete design system</li>
+            <li class="flex gap-2"><span>✔</span>Worked on responsive front-end development using HTML, CSS, JavaScript,
+              and Bootstraps</li>
+            <li class="flex gap-2"><span>✔</span>Created small web graphics (headers, sliders, ads) using Photoshop</li>
+            <li class="flex"><span>✔</span>Built and updated admin panel sections like forms, tables, lists, and user
+              pages</li>
+            <li class="flex"><span>✔</span>Edited images and prepared visual content required for websites</li>
+            <li class="flex"><span>✔</span>Coordinated with senior developers for page updates and improvements</li>
+            <li class="flex"><span>✔</span>Managed routine website maintenance and styling corrections</li>
+
           </ul>
         </div>
       </div>
 
       <!-- Experience 3 -->
       <div class="relative group" data-aos="fade-right" data-aos-delay="300">
-        <div class="absolute left-[-59px] translate-x-1/2 top-[2px]-translate-y-1/2 w-5 h-5 bg-gradient-to-br from-[#2b68e0] to-[#e710ea]  rounded-full shadow z-10"></div>
+        <div
+          class="absolute left-[-59px] translate-x-1/2 top-[2px]-translate-y-1/2 w-5 h-5 bg-gradient-to-br from-[#2b68e0] to-[#e710ea]  rounded-full shadow z-10">
+        </div>
 
-        <div class="bg-[#071122] p-6 rounded-xl shadow hover:shadow-[#8b5cf6]/30 hover:scale-[1.03] transition-all duration-300">
+        <div
+          class="bg-[#071122] p-6 rounded-xl shadow hover:shadow-[#8b5cf6]/30 hover:scale-[1.03] transition-all duration-300">
           <h3 class="text-xl font-semibold text-white">Web Designer Intern</h3>
           <p class="text-gray-400 text-sm">Techno Derivation • Jaipur</p>
           <p class="text-gray-500 text-xs mt-1">Aug 2021 — Nov 2021</p>
 
           <ul class="mt-3 text-gray-300 text-sm space-y-1">
-            <li class="flex gap-2"><span>✔</span>Built landing pages</li>
-            <li class="flex gap-2"><span>✔</span>Maintained documentation</li>
+            <li class="flex gap-2"><span>✔</span>Created basic promotional banners and web creatives using Photoshop
+            </li>
+            <li class="flex gap-2"><span>✔</span>Worked on simple front-end tasks using HTML, CSS, and Bootstrap</li>
+            <li class="flex gap-2"><span>✔</span>Assisted seniors in editing images and preparing small visual assets
+            </li>
+            <li class="flex gap-2"><span>✔</span>Gained understanding of responsive design and front-end workflow</li>
+            <li class="flex gap-2"><span>✔</span>Helped in updating sections on existing websites</li>
           </ul>
         </div>
       </div>
 
     </div>
   </section>
-  
+
   <!-- Projects -->
   <section id="projects" class="py-20 bg-[#07101b]">
     <div class="container mx-auto px-6">
-      <h2 class="text-3xl font-semibold  mb-10">Selected Projects</h2>
+      <h2 class="text-3xl font-semibold  mb-10">Projects</h2>
 
       <div class="grid md:grid-cols-3 gap-6 mb-10">
 
         <!-- card -->
-        <a href="#" class="block rounded-xl overflow-hidden shadow-lg glass transition transform hover:-translate-y-2 hover:scale-102">
+        <div class="block rounded-xl overflow-hidden shadow-lg glass transition transform hover:-translate-y-2 hover:scale-102">
           <img src="./images/23_ride.jpg" class="w-full  object-cover" />
-          <div class="p-4 bg-gray-900">
-            <h4 class="font-semibold">Landing Page UI</h4>
-            <p class="text-sm text-gray-300 mt-2">Responsive landing built with Tailwind and subtle animations.</p>
-            <div class="mt-3 flex gap-2">
-              <span class="text-xs px-3 py-1 rounded bg-[#071122]">Live</span>
-              <span class="text-xs px-3 py-1 rounded bg-[#071122]">Code</span>
+          <div class="p-4 bg-gray-900 h-full">
+            <h4 class="font-semibold">23Ride</h4>
+            <p class="text-sm text-gray-300 mt-2">An informational page created to show app details and provide download links. Built using HTML, CSS, and Bootstrap with a clean and responsive layout.</p>
+            <div class="mt-3">
+              <a href="" class="text-xs px-3 py-1 rounded bg-[#071122] inline-block ">
+                Live
+              </a>
             </div>
           </div>
-        </a>
+        </div>
 
-        <a href="#" class="block rounded-xl overflow-hidden shadow-lg glass transition transform hover:-translate-y-2 hover:scale-102">
+        <div class="block rounded-xl overflow-hidden shadow-lg glass transition transform hover:-translate-y-2 hover:scale-102">
           <img src="./images/cricket_winner.jpg" class="w-full  object-cover" />
-          <div class="p-4 bg-gray-900">
-            <h4 class="font-semibold">Dashboard UI</h4>
-            <p class="text-sm text-gray-300 mt-2">Admin dashboard with charts and components.</p>
-            <div class="mt-3 flex gap-2">
-              <span class="text-xs px-3 py-1 rounded bg-[#071122]">Live</span>
-              <span class="text-xs px-3 py-1 rounded bg-[#071122]">Code</span>
+          <div class="p-4 bg-gray-900 h-full">
+            <h4 class="font-semibold">Cricket Winner</h4>
+            <p class="text-sm text-gray-300 mt-2">Worked with seniors to create the page design in Photoshop, and developed the front-end using HTML, CSS, Bootstrap, and JavaScript. Improved blog layout, spacing, and mobile responsiveness.</p>
+            <div class="mt-3">
+              <a href="" class="text-xs px-3 py-1 rounded bg-[#071122] inline-block ">
+                Live
+              </a>
             </div>
           </div>
-        </a>
+        </div>
 
-        <a href="#" class="block rounded-xl overflow-hidden shadow-lg glass transition transform hover:-translate-y-2 hover:scale-102">
-          <img src="./images/detech_helden.jpg" class="w-full  object-cover" />
-          <div class="p-4 bg-gray-900">
-            <h4 class="font-semibold">Mobile App UI</h4>
-            <p class="text-sm text-gray-300 mt-2">Interactive mobile screens and prototypes.</p>
-            <div class="mt-3 flex gap-2">
-              <span class="text-xs px-3 py-1 rounded bg-[#071122]">Live</span>
-              <span class="text-xs px-3 py-1 rounded bg-[#071122]">Code</span>
+        <div class="block rounded-xl overflow-hidden shadow-lg glass transition transform hover:-translate-y-2 hover:scale-102">
+          <img src="./images/health.jpg" class="w-full  object-cover" />
+          <div class="p-4 bg-gray-900 h-full">
+            <h4 class="font-semibold">Your Mental Health Pal</h4>
+            <p class="text-sm text-gray-300 mt-2">Worked on a few selected pages of this website along with my senior. My responsibilities included designing page layouts and converting them into clean, responsive HTML & CSS while maintaining consistency with the existing website design.</p>
+            <div class="mt-3">
+              <a href="" class="text-xs px-3 py-1 rounded bg-[#071122] inline-block ">
+                Live
+              </a>
             </div>
           </div>
-        </a>
+        </div>
 
-      
+
 
       </div>
 
 
-      <div class="grid md:grid-cols-3 gap-6">
+      <div class="grid md:grid-cols-3 gap-6 mb-10">
 
         <!-- card -->
-        <a href="#" class="block rounded-xl overflow-hidden shadow-lg glass transition transform hover:-translate-y-2 hover:scale-102">
-          <img src="./images/23_ride.jpg" class="w-full  object-cover" />
-          <div class="p-4 bg-gray-900">
-            <h4 class="font-semibold">Landing Page UI</h4>
-            <p class="text-sm text-gray-300 mt-2">Responsive landing built with Tailwind and subtle animations.</p>
-            <div class="mt-3 flex gap-2">
-              <span class="text-xs px-3 py-1 rounded bg-[#071122]">Live</span>
-              <span class="text-xs px-3 py-1 rounded bg-[#071122]">Code</span>
+        <div class="block rounded-xl overflow-hidden shadow-lg glass transition transform hover:-translate-y-2 hover:scale-102">
+          <img src="./images/univers_ads.jpg" class="w-full  object-cover" />
+          <div class="p-4 bg-gray-900 h-full">
+            <h4 class="font-semibold">Universe Ads</h4>
+            <p class="text-sm text-gray-300 mt-2">This is an advertising website. I built the complete front-end from scratch using HTML and CSS, creating a clean and fully responsive layout with a simple and user-friendly design.</p>
+            <div class="mt-3">
+              <a href="" class="text-xs px-3 py-1 rounded bg-[#071122] inline-block ">
+                Live
+              </a>
             </div>
           </div>
-        </a>
+        </div>
 
-        <a href="#" class="block rounded-xl overflow-hidden shadow-lg glass transition transform hover:-translate-y-2 hover:scale-102">
-          <img src="./images/cricket_winner.jpg" class="w-full  object-cover" />
-          <div class="p-4 bg-gray-900">
-            <h4 class="font-semibold">Dashboard UI</h4>
-            <p class="text-sm text-gray-300 mt-2">Admin dashboard with charts and components.</p>
-            <div class="mt-3 flex gap-2">
-              <span class="text-xs px-3 py-1 rounded bg-[#071122]">Live</span>
-              <span class="text-xs px-3 py-1 rounded bg-[#071122]">Code</span>
+        <div class="block rounded-xl overflow-hidden shadow-lg glass transition transform hover:-translate-y-2 hover:scale-102">
+          <img src="./images/4suk.jpg" class="w-full  object-cover" />
+          <div class="p-4 bg-gray-900 h-full">
+            <h4 class="font-semibold">4SUK Consulting</h4>
+            <p class="text-sm text-gray-300 mt-2">This is a UK-based technology consulting website offering networking and IT solutions. I worked on coding selected pages using HTML,CSS ,Bootstrap and updated them to match the existing design and structure of the site.</p>
+            <div class="mt-3">
+              <a href="" class="text-xs px-3 py-1 rounded bg-[#071122] inline-block ">
+                Live
+              </a>
             </div>
           </div>
-        </a>
+        </div>
 
-        <a href="#" class="block rounded-xl overflow-hidden shadow-lg glass transition transform hover:-translate-y-2 hover:scale-102">
+        <div
+          class="block rounded-xl overflow-hidden shadow-lg glass transition transform hover:-translate-y-2 hover:scale-102">
           <img src="./images/detech_helden.jpg" class="w-full  object-cover" />
-          <div class="p-4 bg-gray-900">
-            <h4 class="font-semibold">Mobile App UI</h4>
-            <p class="text-sm text-gray-300 mt-2">Interactive mobile screens and prototypes.</p>
-            <div class="mt-3 flex gap-2">
-              <span class="text-xs px-3 py-1 rounded bg-[#071122]">Live</span>
-              <span class="text-xs px-3 py-1 rounded bg-[#071122]">Code</span>
+          <div class="p-4 bg-gray-900 h-full">
+            <h4 class="font-semibold">DeTech Helden</h4>
+            <p class="text-sm text-gray-300 mt-2">Interactive mobile screens and prototypes.I converted Figma designs into a fully functional, animated website using HTML, CSS, Bootstrap, and JavaScript. The site features smooth animations and responsive layout to ensure a modern user experience.</p>
+            <div class="mt-3">
+              <a href="" class="text-xs px-3 py-1 rounded bg-[#071122] inline-block ">
+                Live
+              </a>
             </div>
           </div>
-        </a>
+        </div>
 
-       
+
+
+      </div>
+
+
+      <div class="grid md:grid-cols-3 gap-6 mb-10">
+
+        <!-- card -->
+        <div class="block rounded-xl overflow-hidden shadow-lg glass transition transform hover:-translate-y-2 hover:scale-102">
+          <img src="./images/e_learning.jpg" class="w-full  object-cover" />
+          <div class="p-4 bg-gray-900 h-full">
+            <h4 class="font-semibold">Grads Centre</h4>
+            <p class="text-sm text-gray-300 mt-2">This is an education and career-guidance website. I worked on this project along with my senior, handling front-end tasks in HTML, CSS, and Bootstrap to build responsive information pages.</p>
+            <div class="mt-3">
+              <a href="" class="text-xs px-3 py-1 rounded bg-[#071122]">
+                Live
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="block rounded-xl overflow-hidden shadow-lg glass transition transform hover:-translate-y-2 hover:scale-102">
+          <img src="./images/school.jpg" class="w-full  object-cover" />
+          <div class="p-4 bg-gray-900 h-full">
+            <h4 class="font-semibold">Sapiens Group</h4>
+            <p class="text-sm text-gray-300 mt-2">This is a school/education website, and I developed the entire front-end myself. I built all the pages using HTML, CSS, and responsive design techniques, focusing on a clean layout and a smooth user experience across devices.</p>
+            <div class="mt-3">
+              <a href="" class="text-xs px-3 py-1 rounded bg-[#071122]">
+                Live
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="block rounded-xl overflow-hidden shadow-lg glass transition transform hover:-translate-y-2 hover:scale-102">
+
+          <img src="./images/prolense.jpg" class="w-full object-cover" />
+
+          <div class="p-4 bg-gray-900 h-full">
+            <h4 class="font-semibold">Prolense</h4>
+
+            <p class="text-sm text-gray-300 mt-2">
+              This is a photography website that I built together with my junior. I contributed to a few front-end sections using HTML, CSS, and Bootstrap, mainly handling page coding and basic responsive adjustments.
+            </p>
+
+            <!-- Only LIVE button -->
+            <div class="mt-3">
+              <a href="" class="text-xs px-3 py-1 rounded bg-[#071122]">
+                Live
+              </a>
+            </div>
+          </div>
+        </div>
+
+
+
+
+      </div>
+
+
+      <div class="grid md:grid-cols-3 gap-6 mb-10">
+
+        <!-- card -->
+        <div class="block rounded-xl overflow-hidden shadow-lg glass transition transform hover:-translate-y-2 hover:scale-102">
+          <img src="./images/techno-derivation.jpg" class="w-full  object-cover" />
+          <div class="p-4 bg-gray-900 h-full">
+            <h4 class="font-semibold">Techno Derivation</h4>
+            <p class="text-sm text-gray-300 mt-2">Built an information-based IT company website from a template, collaborating with a senior on front-end development and contributing to Laravel backend functionality.</p>
+            <div class="mt-3">
+              <a href="" class="text-xs px-3 py-1 rounded bg-[#071122]">
+                Live
+              </a>
+            </div>
+          </div>
+        </div>
+
+        
+
+
+
 
       </div>
     </div>
   </section>
-  
+
 
 
   <!-- Contact Section -->
-<section class="bg-gray-900 text-white py-16 px-6">
-  <div class="max-w-6xl mx-auto grid md:grid-cols-2 gap-10 items-center">
+  <section class="bg-gray-900 text-white py-16 px-6">
+    <div class="max-w-6xl mx-auto grid md:grid-cols-2 gap-10 items-center">
 
-    <!-- Left Side Image -->
-    <div class="flex justify-center">
-      <img src="https://via.placeholder.com/400x400" alt="Contact Image" class="rounded-2xl shadow-xl border border-gray-700">
-    </div>
+      <!-- Left Side Image -->
+      <div class="flex justify-center">
+        <img src="./images/contact.webp" alt="Contact Image"
+          class="rounded-2xl shadow-xl border border-gray-700">
+      </div>
 
-    <!-- Right Side Content -->
-    <div>
-      <h2 class="text-4xl font-bold mb-4">Contact Me</h2>
-      <p class="text-gray-300 mb-6">I'm always open to new opportunities, freelance work, or interesting collaborations. Feel free to reach out!</p>
+      <!-- Right Side Content -->
+      <div>
+        <h2 class="text-4xl font-bold mb-4">Contact Me</h2>
+        <p class="text-gray-300 mb-6">I'm always open to new opportunities, freelance work, or interesting
+          collaborations. Feel free to reach out!</p>
 
-      <div class="space-y-6">
+        <div class="space-y-6">
 
-        <!-- Email -->
-        <div class="flex items-center gap-4 bg-gray-800 p-5 rounded-2xl shadow-lg border border-gray-700">
-          <div class="text-blue-400 text-3xl">📧</div>
-          <div>
-            <h3 class="text-xl font-semibold">Email</h3>
-            <p class="text-blue-400 font-medium">komalkanwar@gmail.com</p>
+          <!-- Email -->
+          <div class="flex items-center gap-4 bg-gray-800 p-5 rounded-2xl shadow-lg border border-gray-700">
+            <div class="text-blue-400 text-3xl">📧</div>
+            <div>
+              <h3 class="text-xl font-semibold">Email</h3>
+              <p class="text-blue-400 font-medium">komaljpr1996@gmail.com</p>
+            </div>
           </div>
-        </div>
 
-        <!-- LinkedIn -->
-        <div class="flex items-center gap-4 bg-gray-800 p-5 rounded-2xl shadow-lg border border-gray-700">
-          <div class="text-blue-400 text-3xl">🔗</div>
-          <div>
-            <h3 class="text-xl font-semibold">LinkedIn</h3>
-            <a href="#" class="hover:text-blue-400 transition">linkedin.com/in/komalkanwar</a>
+          <!-- LinkedIn -->
+          <div class="flex items-center gap-4 bg-gray-800 p-5 rounded-2xl shadow-lg border border-gray-700">
+            <div class="text-blue-400 text-3xl">🔗</div>
+            <div>
+              <h3 class="text-xl font-semibold">LinkedIn</h3>
+              <a href="https://www.linkedin.com/public-profile/settings?trk=d_flagship3_profile_self_view_public_profile"
+                class="hover:text-blue-400 transition">www.linkedin.com/public-profile/settings?trk=d_flagship3_profile_self_view_public_profile</a>
+            </div>
           </div>
-        </div>
 
-        <!-- GitHub -->
+          <!-- GitHub 
         <div class="flex items-center gap-4 bg-gray-800 p-5 rounded-2xl shadow-lg border border-gray-700">
           <div class="text-blue-400 text-3xl">💻</div>
           <div>
             <h3 class="text-xl font-semibold">GitHub</h3>
             <a href="#" class="hover:text-blue-400 transition">github.com/komalkanwar</a>
           </div>
+        </div>-->
+
+          <!-- Availability -->
+          <div class="flex items-center gap-4 bg-gray-800 p-5 rounded-2xl shadow-lg border border-gray-700">
+            <div class="text-blue-400 text-3xl">🕒</div>
+            <div>
+              <h3 class="text-xl font-semibold">Availability</h3>
+              <p class="text-gray-300">Available for freelance projects & full-time opportunities.</p>
+            </div>
+          </div>
+
         </div>
 
-        <!-- Availability -->
-        <div class="flex items-center gap-4 bg-gray-800 p-5 rounded-2xl shadow-lg border border-gray-700">
-          <div class="text-blue-400 text-3xl">🕒</div>
-          <div>
-            <h3 class="text-xl font-semibold">Availability</h3>
-            <p class="text-gray-300">Available for freelance projects & full-time opportunities.</p>
-          </div>
-        </div>
+        <!-- <p class="mt-10 text-gray-400 italic">“Let’s build something amazing together!”</p> -->
 
       </div>
 
-      <p class="mt-10 text-gray-400 italic">“Let’s build something amazing together!”</p>
-
     </div>
-
-  </div>
-</section>
+  </section>
 
 
 
   <!-- Footer -->
-<footer class="bg-gray-800 text-gray-400 py-6 text-center">
-  <p>&copy; 2025 Komal Kanwar. All rights reserved.</p>
-  <div class="mt-2 space-x-4">
-    <a href="#" class="hover:text-blue-400"><i class="fab fa-linkedin"></i></a>
-    <a href="#" class="hover:text-blue-400"><i class="fab fa-github"></i></a>
-    <a href="#" class="hover:text-blue-400"><i class="fab fa-twitter"></i></a>
-  </div>
-</footer>
+  <footer class="bg-gray-800 text-gray-400 py-6 text-center">
+    <p>&copy; 2025 Komal Kanwar. All rights reserved.</p>
+    <!-- <div class="mt-2 space-x-4">
+      <a href="#" class="hover:text-blue-400"><i class="fab fa-linkedin"></i></a>
+      <a href="#" class="hover:text-blue-400"><i class="fab fa-github"></i></a>
+      <a href="#" class="hover:text-blue-400"><i class="fab fa-twitter"></i></a>
+    </div> -->
+  </footer>
 
 
 
 
 
-<script>
-  AOS.init({ duration: 1000, once: true });
+  <script>
+    AOS.init({ duration: 1000, once: true });
 
-  // Mobile menu toggle
-function toggleMenu() {
-  const menu = document.getElementById("mobileMenu");
-  const icon = document.getElementById("menuIcon");
+    // Mobile menu toggle
+    function toggleMenu() {
+      const menu = document.getElementById("mobileMenu");
+      const icon = document.getElementById("menuIcon");
 
-  menu.classList.toggle("hidden");
+      menu.classList.toggle("hidden");
 
-  // Change icon to close
-  if (!menu.classList.contains("hidden")) {
-    icon.name = "close";
+      // Change icon to close
+      if (!menu.classList.contains("hidden")) {
+        icon.name = "close";
 
 
 
-  } else {
-    icon.name = "menu";
-  }
-}
-// enhanced typewriter with blinking cursor
-const text = "I bring clean UI concepts to life with pixel-perfect, responsive code.";
-let i = 0;
-document.addEventListener('DOMContentLoaded', () => {
-  function type() {
-    if (i < text.length) {
-      document.getElementById('typewriter').textContent = text.substring(0, i + 1);
-      i++;
-      setTimeout(type, 65);
+      } else {
+        icon.name = "menu";
+      }
     }
-  }
-  type();
-});
-</script>
+    // enhanced typewriter with blinking cursor
+    const text = "I bring clean UI concepts to life with pixel-perfect, responsive code.";
+    let i = 0;
+    document.addEventListener('DOMContentLoaded', () => {
+      function type() {
+        if (i < text.length) {
+          document.getElementById('typewriter').textContent = text.substring(0, i + 1);
+          i++;
+          setTimeout(type, 65);
+        }
+      }
+      type();
+    });
+    
+  </script>
+
+ 
+
 
 </body>
+
 </html>
