@@ -8,15 +8,13 @@
   <link href="./output.css" rel="stylesheet">
   <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
   <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
- 
-
 
 </head>
 
-<body class="bg-gray-900 text-gray-100 scroll-smooth ">
+<body class="bg-gray-900 text-gray-100 scroll-smooth  ">
+
 
   <!-- Header -->
   <header class="bg-[#071122] w-full z-50 shadow-lg fixed">
@@ -58,7 +56,8 @@
 
 
   <!-- Hero -->
-  <section id="intro" class="min-h-screen flex items-center pt-24 px-10">
+  <section id="intro" class="min-h-screen flex items-center pt-24 px-10 relative overflow-hidden">
+    <div id="tsparticles" class="absolute inset-0 w-full h-full -z-10"></div>
     <div class="container mx-auto px-6 grid lg:grid-cols-2 gap-10 items-center " data-aos="fade-right">
 
       <!-- LEFT: Text -->
@@ -67,7 +66,7 @@
           class="text-4xl sm:text-5xl md:text-6xl font-bold mb-4 bg-gradient-to-br from-[#2b68e0] to-[#e710ea] text-transparent bg-clip-text ">
           Hello, I'm Komal</p>
 
-        <h1 class="text-3xl md:text-4xl lg:text-3xl leading-tight font-bold tracking-wider">
+        <h1 class="text-3xl md:text-3xl lg:text-2xl leading-tight font-bold tracking-wider">
           <span id="typewriter" class="text-3xl md:text-4xl lg:text-5xl leading-tight font-medium typewriter"></span>
           <span class="typewriter-cursor"></span>
         </h1>
@@ -92,7 +91,7 @@
       </div>
 
       <!-- RIGHT: Image -->
-      <div class="flex justify-center lg:justify-center fade-up">
+      <div class="flex justify-center lg:justify-center fade-up pb-10">
         <div
           class="w-[200px] lg:w-[280px] rounded-2xl overflow-hidden shadow-2xl ring-2 ring-[#8b5cf6]/40 shadow-[#8b5cf6]/30 transition-all duration-500 hover:shadow-[#8b5cf6]/60 hover:scale-[1.03]">
           <img src="https://images.unsplash.com/photo-1529626455594-4ff0802cfb7e?auto=format&fit=crop&w=600&q=80"
@@ -105,21 +104,22 @@
 
 
   <!-- About -->
-  <section id="about " class="py-20 bg-[#071122]">
-    <div class="container mx-auto px-6">
+  <section id="about  " class="py-20 bg-[#071122]">
+    <div class="container mx-auto px-6" data-aos="fade-right">
       <div class="mx-auto px-6 grid lg:grid-cols-2 gap-10 items-center">
 
         <div class="fade-up">
           <h2 class="text-4xl sm:text-5xl md:text-6xl  font-semibold mb-6">About Me</h2>
-          <p class="text-gray-300 mb-4">I’m a Frontend Developer and Web Designer with 3.8 years of experience in
-            creating clean, responsive and user-friendly web interfaces. I turn UI ideas into real, functional websites
-            using HTML, CSS, Bootstrap and Tailwind. I also design and refine layouts using Figma and Photoshop.</p>
-
+          <p class="text-gray-300 mb-4">I’m a Frontend Developer & Web Designer with 3.8 years of experience in building clean, responsive and user-friendly websites.</p>
+<p class="text-gray-300 mb-4">I specialize in converting Figma and Photoshop layouts into pixel-perfect front-end pages, ensuring proper spacing, alignment, typography and overall visual consistency.</p>
+<p>I focus on creating designs that are simple, modern and easy for users to navigate.</p>
 
           <ul class="space-y-2 text-gray-300">
-            <li>• Build responsive, pixel-perfect layouts</li>
-            <li>• Convert Figma/Photoshop designs into working websites</li>
-            <li>• Focus on clarity, usability and smooth user experience</li>
+            <li>• Expert in responsive and mobile-friendly layouts</li>
+            <li>• Convert UI/UX designs into clean front-end code</li>
+            <li>• Improve website structure, spacing and readability</li>
+            <li>• Strong eye for colors, alignment and visual balance</li>
+            <li>• Strong eye for colors, alignment and visual balance</li>
           </ul>
         </div>
 
@@ -230,45 +230,53 @@
 
   <!-- Projects -->
   <section id="projects" class="py-20 bg-[#07101b]">
-    <div class="container mx-auto px-6">
+    <div class="container mx-auto px-6" data-aos="fade-right">
       <h2 class="text-3xl font-semibold  mb-10">Projects</h2>
 
       <div class="grid md:grid-cols-3 gap-6 mb-10">
 
         <!-- card -->
-        <div class="block rounded-xl overflow-hidden shadow-lg glass transition transform hover:-translate-y-2 hover:scale-102">
+        <div
+          class="block rounded-xl overflow-hidden shadow-lg glass transition transform hover:-translate-y-2 hover:scale-102">
           <img src="./images/23_ride.jpg" class="w-full  object-cover" />
           <div class="p-4 bg-gray-900 h-full">
             <h4 class="font-semibold">23Ride</h4>
-            <p class="text-sm text-gray-300 mt-2">An informational page created to show app details and provide download links. Built using HTML, CSS, and Bootstrap with a clean and responsive layout.</p>
+            <p class="text-sm text-gray-300 mt-2">An informational page created to show app details and provide download
+              links. Built using HTML, CSS, and Bootstrap with a clean and responsive layout.</p>
             <div class="mt-3">
-              <a href="" class="text-xs px-3 py-1 rounded bg-[#071122] inline-block ">
+              <a href="https://23ride.com/" class="text-xs px-3 py-1 rounded bg-[#071122] inline-block ">
                 Live
               </a>
             </div>
           </div>
         </div>
 
-        <div class="block rounded-xl overflow-hidden shadow-lg glass transition transform hover:-translate-y-2 hover:scale-102">
+        <div
+          class="block rounded-xl overflow-hidden shadow-lg glass transition transform hover:-translate-y-2 hover:scale-102">
           <img src="./images/cricket_winner.jpg" class="w-full  object-cover" />
           <div class="p-4 bg-gray-900 h-full">
             <h4 class="font-semibold">Cricket Winner</h4>
-            <p class="text-sm text-gray-300 mt-2">Worked with seniors to create the page design in Photoshop, and developed the front-end using HTML, CSS, Bootstrap, and JavaScript. Improved blog layout, spacing, and mobile responsiveness.</p>
+            <p class="text-sm text-gray-300 mt-2">Worked with seniors to create the page design in Photoshop, and
+              developed the front-end using HTML, CSS, Bootstrap, and JavaScript. Improved blog layout, spacing, and
+              mobile responsiveness.</p>
             <div class="mt-3">
-              <a href="" class="text-xs px-3 py-1 rounded bg-[#071122] inline-block ">
+              <a href="https://www.cricketwinner.com/" class="text-xs px-3 py-1 rounded bg-[#071122] inline-block ">
                 Live
               </a>
             </div>
           </div>
         </div>
 
-        <div class="block rounded-xl overflow-hidden shadow-lg glass transition transform hover:-translate-y-2 hover:scale-102">
+        <div
+          class="block rounded-xl overflow-hidden shadow-lg glass transition transform hover:-translate-y-2 hover:scale-102">
           <img src="./images/health.jpg" class="w-full  object-cover" />
           <div class="p-4 bg-gray-900 h-full">
             <h4 class="font-semibold">Your Mental Health Pal</h4>
-            <p class="text-sm text-gray-300 mt-2">Worked on a few selected pages of this website along with my senior. My responsibilities included designing page layouts and converting them into clean, responsive HTML & CSS while maintaining consistency with the existing website design.</p>
+            <p class="text-sm text-gray-300 mt-2">Worked on a few selected pages of this website along with my senior.
+              My responsibilities included designing page layouts and converting them into clean, responsive HTML & CSS
+              while maintaining consistency with the existing website design.</p>
             <div class="mt-3">
-              <a href="" class="text-xs px-3 py-1 rounded bg-[#071122] inline-block ">
+              <a href="https://yourmentalhealthpal.com/" class="text-xs px-3 py-1 rounded bg-[#071122] inline-block ">
                 Live
               </a>
             </div>
@@ -283,26 +291,32 @@
       <div class="grid md:grid-cols-3 gap-6 mb-10">
 
         <!-- card -->
-        <div class="block rounded-xl overflow-hidden shadow-lg glass transition transform hover:-translate-y-2 hover:scale-102">
+        <div
+          class="block rounded-xl overflow-hidden shadow-lg glass transition transform hover:-translate-y-2 hover:scale-102">
           <img src="./images/univers_ads.jpg" class="w-full  object-cover" />
           <div class="p-4 bg-gray-900 h-full">
             <h4 class="font-semibold">Universe Ads</h4>
-            <p class="text-sm text-gray-300 mt-2">This is an advertising website. I built the complete front-end from scratch using HTML and CSS, creating a clean and fully responsive layout with a simple and user-friendly design.</p>
+            <p class="text-sm text-gray-300 mt-2">This is an advertising website. I built the complete front-end from
+              scratch using HTML and CSS, creating a clean and fully responsive layout with a simple and user-friendly
+              design.</p>
             <div class="mt-3">
-              <a href="" class="text-xs px-3 py-1 rounded bg-[#071122] inline-block ">
+              <a href="https://universeads.net/" class="text-xs px-3 py-1 rounded bg-[#071122] inline-block ">
                 Live
               </a>
             </div>
           </div>
         </div>
 
-        <div class="block rounded-xl overflow-hidden shadow-lg glass transition transform hover:-translate-y-2 hover:scale-102">
+        <div
+          class="block rounded-xl overflow-hidden shadow-lg glass transition transform hover:-translate-y-2 hover:scale-102">
           <img src="./images/4suk.jpg" class="w-full  object-cover" />
           <div class="p-4 bg-gray-900 h-full">
             <h4 class="font-semibold">4SUK Consulting</h4>
-            <p class="text-sm text-gray-300 mt-2">This is a UK-based technology consulting website offering networking and IT solutions. I worked on coding selected pages using HTML,CSS ,Bootstrap and updated them to match the existing design and structure of the site.</p>
+            <p class="text-sm text-gray-300 mt-2">This is a UK-based technology consulting website offering networking
+              and IT solutions. I worked on coding selected pages using HTML,CSS ,Bootstrap and updated them to match
+              the existing design and structure of the site.</p>
             <div class="mt-3">
-              <a href="" class="text-xs px-3 py-1 rounded bg-[#071122] inline-block ">
+              <a href="https://4sukconsulting.co.uk/" class="text-xs px-3 py-1 rounded bg-[#071122] inline-block ">
                 Live
               </a>
             </div>
@@ -314,9 +328,11 @@
           <img src="./images/detech_helden.jpg" class="w-full  object-cover" />
           <div class="p-4 bg-gray-900 h-full">
             <h4 class="font-semibold">DeTech Helden</h4>
-            <p class="text-sm text-gray-300 mt-2">Interactive mobile screens and prototypes.I converted Figma designs into a fully functional, animated website using HTML, CSS, Bootstrap, and JavaScript. The site features smooth animations and responsive layout to ensure a modern user experience.</p>
+            <p class="text-sm text-gray-300 mt-2">Interactive mobile screens and prototypes.I converted Figma designs
+              into a fully functional, animated website using HTML, CSS, Bootstrap, and JavaScript. The site features
+              smooth animations and responsive layout to ensure a modern user experience.</p>
             <div class="mt-3">
-              <a href="" class="text-xs px-3 py-1 rounded bg-[#071122] inline-block ">
+              <a href="https://detechhelden.nl/" class="text-xs px-3 py-1 rounded bg-[#071122] inline-block ">
                 Live
               </a>
             </div>
@@ -331,33 +347,40 @@
       <div class="grid md:grid-cols-3 gap-6 mb-10">
 
         <!-- card -->
-        <div class="block rounded-xl overflow-hidden shadow-lg glass transition transform hover:-translate-y-2 hover:scale-102">
+        <div
+          class="block rounded-xl overflow-hidden shadow-lg glass transition transform hover:-translate-y-2 hover:scale-102">
           <img src="./images/e_learning.jpg" class="w-full  object-cover" />
           <div class="p-4 bg-gray-900 h-full">
             <h4 class="font-semibold">Grads Centre</h4>
-            <p class="text-sm text-gray-300 mt-2">This is an education and career-guidance website. I worked on this project along with my senior, handling front-end tasks in HTML, CSS, and Bootstrap to build responsive information pages.</p>
+            <p class="text-sm text-gray-300 mt-2">This is an education and career-guidance website. I worked on this
+              project along with my senior, handling front-end tasks in HTML, CSS, and Bootstrap to build responsive
+              information pages.</p>
             <div class="mt-3">
-              <a href="" class="text-xs px-3 py-1 rounded bg-[#071122]">
+              <a href="http://gradscentre.com/" class="text-xs px-3 py-1 rounded bg-[#071122]">
                 Live
               </a>
             </div>
           </div>
         </div>
 
-        <div class="block rounded-xl overflow-hidden shadow-lg glass transition transform hover:-translate-y-2 hover:scale-102">
+        <div
+          class="block rounded-xl overflow-hidden shadow-lg glass transition transform hover:-translate-y-2 hover:scale-102">
           <img src="./images/school.jpg" class="w-full  object-cover" />
           <div class="p-4 bg-gray-900 h-full">
             <h4 class="font-semibold">Sapiens Group</h4>
-            <p class="text-sm text-gray-300 mt-2">This is a school/education website, and I developed the entire front-end myself. I built all the pages using HTML, CSS, and responsive design techniques, focusing on a clean layout and a smooth user experience across devices.</p>
+            <p class="text-sm text-gray-300 mt-2">This is a school/education website, and I developed the entire
+              front-end myself. I built all the pages using HTML, CSS, and responsive design techniques, focusing on a
+              clean layout and a smooth user experience across devices.</p>
             <div class="mt-3">
-              <a href="" class="text-xs px-3 py-1 rounded bg-[#071122]">
+              <a href="https://sapiensgroup.in/" class="text-xs px-3 py-1 rounded bg-[#071122]">
                 Live
               </a>
             </div>
           </div>
         </div>
 
-        <div class="block rounded-xl overflow-hidden shadow-lg glass transition transform hover:-translate-y-2 hover:scale-102">
+        <div
+          class="block rounded-xl overflow-hidden shadow-lg glass transition transform hover:-translate-y-2 hover:scale-102">
 
           <img src="./images/prolense.jpg" class="w-full object-cover" />
 
@@ -365,12 +388,13 @@
             <h4 class="font-semibold">Prolense</h4>
 
             <p class="text-sm text-gray-300 mt-2">
-              This is a photography website that I built together with my junior. I contributed to a few front-end sections using HTML, CSS, and Bootstrap, mainly handling page coding and basic responsive adjustments.
+              This is a photography website that I built together with my junior. I contributed to a few front-end
+              sections using HTML, CSS, and Bootstrap, mainly handling page coding and basic responsive adjustments.
             </p>
 
             <!-- Only LIVE button -->
             <div class="mt-3">
-              <a href="" class="text-xs px-3 py-1 rounded bg-[#071122]">
+              <a href="https://demo.technoderivation.com/prolense/" class="text-xs px-3 py-1 rounded bg-[#071122]">
                 Live
               </a>
             </div>
@@ -386,20 +410,23 @@
       <div class="grid md:grid-cols-3 gap-6 mb-10">
 
         <!-- card -->
-        <div class="block rounded-xl overflow-hidden shadow-lg glass transition transform hover:-translate-y-2 hover:scale-102">
+        <div
+          class="block rounded-xl overflow-hidden shadow-lg glass transition transform hover:-translate-y-2 hover:scale-102">
           <img src="./images/techno-derivation.jpg" class="w-full  object-cover" />
           <div class="p-4 bg-gray-900 h-full">
             <h4 class="font-semibold">Techno Derivation</h4>
-            <p class="text-sm text-gray-300 mt-2">Built an information-based IT company website from a template, collaborating with a senior on front-end development and contributing to Laravel backend functionality.</p>
+            <p class="text-sm text-gray-300 mt-2">Built an information-based IT company website from a template,
+              collaborating with a senior on front-end development and contributing to Laravel backend functionality.
+            </p>
             <div class="mt-3">
-              <a href="" class="text-xs px-3 py-1 rounded bg-[#071122]">
+              <a href="https://technoderivation.com/" class="text-xs px-3 py-1 rounded bg-[#071122]">
                 Live
               </a>
             </div>
           </div>
         </div>
 
-        
+
 
 
 
@@ -412,12 +439,11 @@
 
   <!-- Contact Section -->
   <section class="bg-gray-900 text-white py-16 px-6">
-    <div class="max-w-6xl mx-auto grid md:grid-cols-2 gap-10 items-center">
+    <div class="max-w-6xl mx-auto grid md:grid-cols-2 gap-10 items-center" data-aos="fade-right">
 
       <!-- Left Side Image -->
       <div class="flex justify-center">
-        <img src="./images/contact.webp" alt="Contact Image"
-          class="rounded-2xl shadow-xl border border-gray-700">
+        <img src="./images/contact.webp" alt="Contact Image" class="rounded-2xl shadow-xl border border-gray-700">
       </div>
 
       <!-- Right Side Content -->
@@ -488,7 +514,8 @@
 
 
 
-
+  <!-- tsParticles CDN -->
+  <script src="https://cdn.jsdelivr.net/npm/tsparticles@2/tsparticles.bundle.min.js"></script>
 
   <script>
     AOS.init({ duration: 1000, once: true });
@@ -523,14 +550,76 @@
       }
       type();
     });
-    
+
+
+
+
+    tsParticles.load("tsparticles", {
+      fullScreen: { enable: false },
+      fpsLimit: 60,
+
+      interactivity: {
+        events: {
+          onHover: {
+            enable: true,
+            mode: ["grab", "repulse"],   // ← 2 effects at once
+          },
+          onClick: {
+            enable: true,
+            mode: "push",  // ← click effect (optional, looks good)
+          },
+        },
+        modes: {
+          grab: {
+            distance: 200,
+            lineLinked: {
+              opacity: 0.5,
+            },
+          },
+          repulse: {
+            distance: 120,
+            duration: 0.4,
+          },
+          push: {
+            quantity: 4,
+          },
+        },
+      },
+
+      particles: {
+        number: {
+          value: 80,
+        },
+        color: {
+          value: ["#6C63FF", "#BB86FC", "#ffffff55"],
+        },
+        shape: {
+          type: "circle",
+        },
+        opacity: {
+          value: 0.6,
+        },
+        size: {
+          value: 3,
+        },
+        line_linked: {
+          enable: true,
+          distance: 150,
+          color: "#6C63FF",
+          opacity: 0.3,
+          width: 1,
+        },
+        move: {
+          enable: true,
+          speed: 2,
+        },
+      },
+    });
+
   </script>
 
- 
 
 
 </body>
 
 </html>
-
-
