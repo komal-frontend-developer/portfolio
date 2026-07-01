@@ -1,629 +1,349 @@
+
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Portfolio of Komal Kanwar, Frontend Developer and Web Designer.">
   <title>Komal Kanwar Portfolio</title>
   <link href="./output.css" rel="stylesheet">
-  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
-  <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
-  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-
+  <link href="./style.css" rel="stylesheet">
 </head>
 
-<body class="bg-gray-900 text-gray-100 scroll-smooth  ">
+<body>
+  <header class="site-header">
+    <nav class="nav-wrap" aria-label="Main navigation">
+      <a class="brand" href="#intro">Komal Kanwar</a>
 
+      <button class="menu-toggle" id="menuToggle" type="button" aria-label="Open menu" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
 
-  <!-- Header -->
-  <header class="bg-[#071122] w-full z-50 shadow-lg ">
-    <nav class="container mx-auto px-6 py-4 flex justify-between items-center fixed">
-
-      <!-- LOGO -->
-      <h1 class="text-2xl font-bold bg-gradient-to-br from-[#2b68e0] to-[#e710ea] text-transparent bg-clip-text">
-        Komal Kanwar
-      </h1>
-
-      <!-- DESKTOP MENU -->
-      <ul class="hidden md:flex items-center gap-8 text-gray-200 font-medium">
-        <li><a href="#intro" class="hover:text-[#e710ea]">Home</a></li>
-        <li><a href="#about" class="hover:text-[#e710ea]">About</a></li>
-        <li><a href="#exp" class="hover:text-[#e710ea]">Experience</a></li>
-        <li><a href="#projects" class="hover:text-[#e710ea]">Projects</a></li>
-        <li><a href="#contact" class="hover:text-[#e710ea]">Contact Us</a></li>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#intro">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#exp">Experience</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
       </ul>
-
-      <!-- MOBILE MENU ICON -->
-      <ion-icon name="menu" id="menuIcon" class="text-3xl text-white md:hidden cursor-pointer" onclick="toggleMenu()">
-      </ion-icon>
     </nav>
-
-    <!-- MOBILE MENU (Pushes content down) -->
-    <div id="mobileMenu"
-      class="hidden flex-col bg-[#071122] text-gray-200 py-6 px-6 space-y-6 shadow-inner md:hidden transition-all duration-300">
-      <a href="#intro" class="hover:text-[#e710ea] block">Home</a>
-      <a href="#about" class="hover:text-[#e710ea] block">About</a>
-      <a href="#exp" class="hover:text-[#e710ea] block">Experience</a>
-      <a href="#projects" class="hover:text-[#e710ea] block">Projects</a>
-      <a href="#contact" class="hover:text-[#e710ea] block">Contact Us</a>
-    </div>
   </header>
 
-
-
-
-
-
-  <!-- Hero -->
-  <section id="intro" class="min-h-screen flex items-center sm:pt-10 pt-20 px-10 relative overflow-hidden">
-    <div id="tsparticles" class="absolute inset-0 w-full h-full -z-10"></div>
-    <div class="container mx-auto px-6 grid lg:grid-cols-2 gap-10 items-center" data-aos="fade-right">
-
-      <!-- LEFT: Text -->
-      <div class="space-y-6 fade-up">
-        <p
-          class="text-4xl sm:text-5xl md:text-6xl font-bold mb-4 bg-gradient-to-br from-[#2b68e0] to-[#e710ea] text-transparent bg-clip-text ">
-          Hello, I'm Komal</p>
-
-        <h1 class="text-3xl md:text-3xl lg:text-3xl leading-tight font-bold tracking-wider">
-          <span id="typewriter" class="text-3xl md:text-4xl lg:text-5xl leading-tight font-medium typewriter"></span>
-          <span class="typewriter-cursor"></span>
-        </h1>
-
-        <p class="max-w-xl text-gray-300 text-lg">I bring clean UI concepts to life with pixel-perfect, responsive code.</p>
-
-        <div class="flex gap-4 items-center pt-2">
-          <!-- <a href="#projects" class="inline-flex items-center gap-3 px-5 py-3 rounded-lg bg-amber-400 text-black font-semibold hover:scale-105 transition">See Projects</a>-->
-
-          <a href="./komal_kanwar_resume.pdf" download="komal_kanwar_resume.pdf"
-            class="hover:bg-clip-text hover:text-transparent bg-gradient-to-br from-[#2b68e0] to-[#e710ea] border-solid border-2 border-[#5356e3]  font-bold text-white px-5 py-2 rounded-full inline-flex items-center gap-2  transition">
-            <!-- download icon -->
-            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-gray-200" viewBox="0 0 20 20"
-              fill="currentColor">
-              <path d="M3 14a1 1 0 001 1h12a1 1 0 001-1v-3a1 1 0 10-2 0v2H5v-2a1 1 0 10-2 0v3z" />
-              <path d="M7 7a1 1 0 011-1h2V3a1 1 0 112 0v3h2a1 1 0 011 1v1a1 1 0 11-2 0V8h-6v.999a1 1 0 11-2 0V8z" />
-            </svg>
-            <span class="text-[18px]">Download CV</span>
-          </a>
+  <main>
+    <section class="hero section-pad" id="intro">
+      <div id="tsparticles" aria-hidden="true"></div>
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <p class="eyebrow">Frontend Developer | Web Designer</p>
+          <h1>Hello, I'm Komal</h1>
+          <p class="type-line">
+            <span id="typewriter">I bring clean UI concepts to life with pixel-perfect, responsive code.</span>
+            <span class="typewriter-cursor" aria-hidden="true"></span>
+          </p>
+          <p class="hero-text">
+            I build clean, responsive, and user-friendly websites with careful attention to layout, spacing,
+            typography, and visual consistency.
+          </p>
+          <div class="hero-actions">
+            <a class="btn primary-btn" href="./komal_kanwar_resume.pdf" download="komal_kanwar_resume.pdf">Download CV</a>
+            <a class="btn ghost-btn" href="#projects">View Projects</a>
+          </div>
         </div>
 
-      </div>
-
-      <!-- RIGHT: Image -->
-      <div class="flex justify-center lg:justify-center fade-up pb-10">
-        <div
-          class="w-[200px] lg:w-[280px] rounded-2xl overflow-hidden shadow-2xl ring-2 ring-[#8b5cf6]/40 shadow-[#8b5cf6]/30 transition-all duration-500 hover:shadow-[#8b5cf6]/60 hover:scale-[1.03]">
-          <img src="./images/profile.jpg"
-            class="w-full h-full object-cover" />
+        <div class="profile-card" aria-label="Profile photo">
+          <img src="./images/profile.jpg" alt="Komal Kanwar profile photo">
         </div>
       </div>
+    </section>
 
-    </div>
-  </section>
-
-
-  <!-- About -->
-  <section id="about" class="py-20 bg-[#071122]">
-    <div class="container mx-auto px-10" data-aos="fade-right">
-      <div class="mx-auto px-6 grid lg:grid-cols-2 gap-10 items-center">
-
-        <div class="fade-up">
-          <h2 class="text-4xl sm:text-5xl md:text-6xl  font-semibold mb-6">About Me</h2>
-          <p class="text-gray-300 mb-4">I’m a Frontend Developer & Web Designer with 3.8 years of experience in building
-            clean, responsive and user-friendly websites.</p>
-          <p class="text-gray-300 mb-4">I specialize in converting Figma and Photoshop layouts into pixel-perfect
-            front-end pages, ensuring proper spacing, alignment, typography and overall visual consistency.</p>
-          <p class="text-gray-300 mb-4">I focus on creating designs that are simple, modern and easy for users to navigate.</p>
-
-          <ul class="space-y-2 text-gray-300">
-            <li>• Expert in responsive and mobile-friendly layouts</li>
-            <li>• Convert UI/UX designs into clean front-end code</li>
-            <li>• Improve website structure, spacing and readability</li>
-            <li>• Strong eye for colors, alignment and visual balance</li>
-            <li>• Strong eye for colors, alignment and visual balance</li>
+    <section class="section-pad about-section" id="about">
+      <div class="container split-grid">
+        <div>
+          <h2>About Me</h2>
+          <p>
+            I'm a Frontend Developer and Web Designer with 3.8 years of experience in building clean,
+            responsive, and user-friendly websites.
+          </p>
+          <p>
+            I specialize in converting Figma and Photoshop layouts into pixel-perfect front-end pages while
+            maintaining proper spacing, alignment, typography, and overall visual balance.
+          </p>
+          <ul class="clean-list">
+            <li>Expert in responsive and mobile-friendly layouts</li>
+            <li>Convert UI/UX designs into clean front-end code</li>
+            <li>Improve website structure, spacing, and readability</li>
+            <li>Strong eye for colors, alignment, and visual consistency</li>
           </ul>
         </div>
 
-        <div class="fade-up">
-          <h3 class="text-4xl font-semibold mb-6">Skills</h3>
-          <div class="grid grid-cols-2 gap-3 text-sm">
-            <span class="px-3 py-2 rounded bg-[#071122] border border-gray-700">HTML</span>
-            <span class="px-3 py-2 rounded bg-[#071122] border border-gray-700">CSS</span>
-            <span class="px-3 py-2 rounded bg-[#071122] border border-gray-700">Tailwind CSS</span>
-            <span class="px-3 py-2 rounded bg-[#071122] border border-gray-700">BOOTSTRAP</span>
-            <span class="px-3 py-2 rounded bg-[#071122] border border-gray-700">WORDPRESS</span>
-            <span class="px-3 py-2 rounded bg-[#071122] border border-gray-700">PHOTOSHOP</span>
-            <span class="px-3 py-2 rounded bg-[#071122] border border-gray-700">FIGMA</span>
+        <div class="skills-panel">
+          <h3>Skills</h3>
+          <div class="skill-grid">
+            <span>HTML</span>
+            <span>CSS</span>
+            <span>Tailwind CSS</span>
+            <span>Bootstrap</span>
+            <span>WordPress</span>
+            <span>Photoshop</span>
+            <span>Figma</span>
+            <span>JavaScript</span>
           </div>
-        </div>
-
-      </div>
-    </div>
-  </section>
-
-
-
-  <section class="max-w-5xl mx-auto px-4 py-14" id="exp">
-    <h2 class="text-4xl sm:text-5xl md:text-6xl  font-semibold mb-2" data-aos="fade-up">Work Experience</h2>
-    <p class="text-gray-400 mb-10" data-aos="fade-up" data-aos-delay="100">Professional Roles & Responsibilities</p>
-
-    <div class="relative pl-10 border-l-2 border-gray-700 space-y-12">
-
-      <!-- Experience 1 -->
-      <div class="relative group" data-aos="fade-right">
-        <div
-          class="absolute left-[-59px] translate-x-1/2 top-[2px]-translate-y-1/2 w-5 h-5 bg-gradient-to-br from-[#2b68e0] to-[#e710ea]  rounded-full shadow z-10">
-        </div>
-
-        <div
-          class="bg-[#071122] p-6 rounded-xl shadow hover:shadow-[#8b5cf6]/30 hover:scale-[1.03] transition-all duration-300">
-          <h3 class="text-xl font-semibold text-white">Web Designer</h3>
-          <p class="text-gray-400 text-sm">Proftcode Technology • Jaipur</p>
-          <p class="text-gray-500 text-xs mt-1">Mar 2025 — Present</p>
-
-          <ul class="mt-3 text-gray-300 text-sm space-y-1">
-            <li class="flex gap-2"><span>✔</span>Building responsive website pages using HTML, CSS, Bootstrap, and
-              JavaScript</li>
-            <li class="flex gap-2"><span>✔</span>Updating existing websites and improving their layout, spacing, and
-              styling</li>
-            <li class="flex gap-2"><span>✔</span>Working on admin features like forms, user sections, and components
-            </li>
-            <li class="flex gap-2"><span>✔</span>Collaborating with the team to deliver clean and functional front-end
-              sections</li>
-            <li class="flex gap-2"><span>✔</span>Creating small creatives when needed (simple banners or web visuals)
-            </li>
-          </ul>
         </div>
       </div>
+    </section>
 
-      <!-- Experience 2 -->
-      <div class="relative group" data-aos="fade-right" data-aos-delay="150">
-        <div
-          class="absolute left-[-59px] translate-x-1/2 top-[2px]-translate-y-1/2 w-5 h-5 bg-gradient-to-br from-[#2b68e0] to-[#e710ea]  rounded-full shadow z-10">
-        </div>
+    <section class="section-pad" id="exp">
+      <div class="container">
+        <h2>Work Experience</h2>
+        <p class="section-subtitle">Professional roles and responsibilities</p>
 
-        <div
-          class="bg-[#071122] p-6 rounded-xl shadow hover:shadow-[#8b5cf6]/30 hover:scale-[1.03] transition-all duration-300">
-          <h3 class="text-xl font-semibold text-white">Web Designer</h3>
-          <p class="text-gray-400 text-sm">Techno Derivation • Jaipur</p>
-          <p class="text-gray-500 text-xs mt-1">DEc 2021 — Jan 2025</p>
+        <div class="timeline">
+          <article class="timeline-item">
+            <div class="timeline-dot" aria-hidden="true"></div>
+            <div class="panel">
+              <h3>Web Designer</h3>
+              <p class="muted">Proftcode Technology - Jaipur</p>
+              <p class="date">Mar 2025 - Present</p>
+              <ul class="tick-list">
+                <li>Building responsive website pages using HTML, CSS, Bootstrap, and JavaScript</li>
+                <li>Updating existing websites and improving layout, spacing, and styling</li>
+                <li>Working on admin features like forms, user sections, and components</li>
+                <li>Collaborating with the team to deliver clean and functional front-end sections</li>
+                <li>Creating simple banners and web visuals when needed</li>
+              </ul>
+            </div>
+          </article>
 
-          <ul class="mt-3 text-gray-300 text-sm space-y-1">
-            <li class="flex gap-2"><span>✔</span>Worked on responsive front-end development using HTML, CSS, JavaScript,
-              and Bootstraps</li>
-            <li class="flex gap-2"><span>✔</span>Created small web graphics (headers, sliders, ads) using Photoshop</li>
-            <li class="flex"><span>✔</span>Built and updated admin panel sections like forms, tables, lists, and user
-              pages</li>
-            <li class="flex"><span>✔</span>Edited images and prepared visual content required for websites</li>
-            <li class="flex"><span>✔</span>Coordinated with senior developers for page updates and improvements</li>
-            <li class="flex"><span>✔</span>Managed routine website maintenance and styling corrections</li>
+          <article class="timeline-item">
+            <div class="timeline-dot" aria-hidden="true"></div>
+            <div class="panel">
+              <h3>Web Designer</h3>
+              <p class="muted">Techno Derivation - Jaipur</p>
+              <p class="date">Dec 2021 - Jan 2025</p>
+              <ul class="tick-list">
+                <li>Worked on responsive front-end development using HTML, CSS, JavaScript, and Bootstrap</li>
+                <li>Created web graphics such as headers, sliders, and ads using Photoshop</li>
+                <li>Built and updated admin panel sections like forms, tables, lists, and user pages</li>
+                <li>Edited images and prepared visual content required for websites</li>
+                <li>Coordinated with senior developers for page updates and improvements</li>
+                <li>Managed routine website maintenance and styling corrections</li>
+              </ul>
+            </div>
+          </article>
 
-          </ul>
+          <article class="timeline-item">
+            <div class="timeline-dot" aria-hidden="true"></div>
+            <div class="panel">
+              <h3>Web Designer Intern</h3>
+              <p class="muted">Techno Derivation - Jaipur</p>
+              <p class="date">Aug 2021 - Nov 2021</p>
+              <ul class="tick-list">
+                <li>Created basic promotional banners and web creatives using Photoshop</li>
+                <li>Worked on simple front-end tasks using HTML, CSS, and Bootstrap</li>
+                <li>Assisted seniors in editing images and preparing small visual assets</li>
+                <li>Gained understanding of responsive design and front-end workflow</li>
+                <li>Helped update sections on existing websites</li>
+              </ul>
+            </div>
+          </article>
         </div>
       </div>
+    </section>
 
-      <!-- Experience 3 -->
-      <div class="relative group" data-aos="fade-right" data-aos-delay="300">
-        <div
-          class="absolute left-[-59px] translate-x-1/2 top-[2px]-translate-y-1/2 w-5 h-5 bg-gradient-to-br from-[#2b68e0] to-[#e710ea]  rounded-full shadow z-10">
-        </div>
+    <section class="section-pad projects-section" id="projects">
+      <div class="container">
+        <h2>Projects</h2>
+        <div class="project-grid">
+          <article class="project-card">
+            <img src="./images/23_ride.jpg" alt="23Ride project preview">
+            <div>
+              <h3>23Ride</h3>
+              <p>An informational page created to show app details and provide download links. Built using HTML, CSS, and Bootstrap with a clean responsive layout.</p>
+              <a href="https://23ride.com/" target="_blank" rel="noopener">Live</a>
+            </div>
+          </article>
 
-        <div
-          class="bg-[#071122] p-6 rounded-xl shadow hover:shadow-[#8b5cf6]/30 hover:scale-[1.03] transition-all duration-300">
-          <h3 class="text-xl font-semibold text-white">Web Designer Intern</h3>
-          <p class="text-gray-400 text-sm">Techno Derivation • Jaipur</p>
-          <p class="text-gray-500 text-xs mt-1">Aug 2021 — Nov 2021</p>
+          <article class="project-card">
+            <img src="./images/cricket_winner.jpg" alt="Cricket Winner project preview">
+            <div>
+              <h3>Cricket Winner</h3>
+              <p>Worked with seniors to create page designs in Photoshop and developed the front end using HTML, CSS, Bootstrap, and JavaScript.</p>
+              <a href="https://www.cricketwinner.com/" target="_blank" rel="noopener">Live</a>
+            </div>
+          </article>
 
-          <ul class="mt-3 text-gray-300 text-sm space-y-1">
-            <li class="flex gap-2"><span>✔</span>Created basic promotional banners and web creatives using Photoshop
-            </li>
-            <li class="flex gap-2"><span>✔</span>Worked on simple front-end tasks using HTML, CSS, and Bootstrap</li>
-            <li class="flex gap-2"><span>✔</span>Assisted seniors in editing images and preparing small visual assets
-            </li>
-            <li class="flex gap-2"><span>✔</span>Gained understanding of responsive design and front-end workflow</li>
-            <li class="flex gap-2"><span>✔</span>Helped in updating sections on existing websites</li>
-          </ul>
+          <article class="project-card">
+            <img src="./images/health.jpg" alt="Your Mental Health Pal project preview">
+            <div>
+              <h3>Your Mental Health Pal</h3>
+              <p>Designed selected pages and converted them into clean, responsive HTML and CSS while matching the existing website style.</p>
+              <a href="https://yourmentalhealthpal.com/" target="_blank" rel="noopener">Live</a>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <img src="./images/univers_ads.jpg" alt="Universe Ads project preview">
+            <div>
+              <h3>Universe Ads</h3>
+              <p>Built the complete front end from scratch using HTML and CSS, creating a clean and fully responsive user-friendly layout.</p>
+              <a href="https://universeads.net/" target="_blank" rel="noopener">Live</a>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <img src="./images/4suk.jpg" alt="4SUK Consulting project preview">
+            <div>
+              <h3>4SUK Consulting</h3>
+              <p>Coded selected pages using HTML, CSS, and Bootstrap, then updated them to match the existing structure and design.</p>
+              <a href="https://4sukconsulting.co.uk/" target="_blank" rel="noopener">Live</a>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <img src="./images/detech_helden.jpg" alt="DeTech Helden project preview">
+            <div>
+              <h3>DeTech Helden</h3>
+              <p>Converted Figma designs into a functional animated website with smooth interactions and a responsive layout.</p>
+              <a href="https://detechhelden.nl/" target="_blank" rel="noopener">Live</a>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <img src="./images/e_learning.jpg" alt="Grads Centre project preview">
+            <div>
+              <h3>Grads Centre</h3>
+              <p>Worked on front-end tasks using HTML, CSS, and Bootstrap to build responsive education and career-guidance information pages.</p>
+              <a href="http://gradscentre.com/" target="_blank" rel="noopener">Live</a>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <img src="./images/school.jpg" alt="Sapiens Group project preview">
+            <div>
+              <h3>Sapiens Group</h3>
+              <p>Developed the complete front end using HTML, CSS, and responsive design techniques for a clean cross-device experience.</p>
+              <a href="https://sapiensgroup.in/" target="_blank" rel="noopener">Live</a>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <img src="./images/prolense.jpg" alt="Prolense project preview">
+            <div>
+              <h3>Prolense</h3>
+              <p>Contributed to front-end sections using HTML, CSS, and Bootstrap, mainly handling page coding and responsive adjustments.</p>
+              <a href="https://demo.technoderivation.com/prolense/" target="_blank" rel="noopener">Live</a>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <img src="./images/techno-derivation.jpg" alt="Techno Derivation project preview">
+            <div>
+              <h3>Techno Derivation</h3>
+              <p>Built an IT company website from a template, collaborating on front-end development and Laravel backend functionality.</p>
+              <a href="https://technoderivation.com/" target="_blank" rel="noopener">Live</a>
+            </div>
+          </article>
         </div>
       </div>
+    </section>
 
-    </div>
-  </section>
-
-  <!-- Projects -->
-  <section id="projects" class="py-20 bg-[#07101b]">
-    <div class="container mx-auto px-6" data-aos="fade-right">
-      <h2 class="text-4xl sm:text-5xl md:text-6xl font-semibold mb-10">Projects</h2>
-
-      <div class="grid md:grid-cols-3 gap-6 mb-10">
-
-        <!-- card -->
-        <div
-          class="block rounded-xl overflow-hidden shadow-lg glass transition transform hover:-translate-y-2 hover:scale-102">
-          <img src="./images/23_ride.jpg" class="w-full  object-cover" />
-          <div class="p-4 bg-gray-900 h-full">
-            <h4 class="font-semibold">23Ride</h4>
-            <p class="text-sm text-gray-300 mt-2">An informational page created to show app details and provide download
-              links. Built using HTML, CSS, and Bootstrap with a clean and responsive layout.</p>
-            <div class="mt-3">
-              <a href="https://23ride.com/" class="text-xs px-3 py-1 rounded bg-[#071122] inline-block ">
-                Live
-              </a>
-            </div>
-          </div>
+    <section class="section-pad contact-section" id="contact">
+      <div class="container contact-grid">
+        <div class="contact-image">
+          <img src="./images/contact.webp" alt="Contact illustration">
         </div>
 
-        <div
-          class="block rounded-xl overflow-hidden shadow-lg glass transition transform hover:-translate-y-2 hover:scale-102">
-          <img src="./images/cricket_winner.jpg" class="w-full  object-cover" />
-          <div class="p-4 bg-gray-900 h-full">
-            <h4 class="font-semibold">Cricket Winner</h4>
-            <p class="text-sm text-gray-300 mt-2">Worked with seniors to create the page design in Photoshop, and
-              developed the front-end using HTML, CSS, Bootstrap, and JavaScript. Improved blog layout, spacing, and
-              mobile responsiveness.</p>
-            <div class="mt-3">
-              <a href="https://www.cricketwinner.com/" class="text-xs px-3 py-1 rounded bg-[#071122] inline-block ">
-                Live
-              </a>
-            </div>
+        <div>
+          <h2>Contact Me</h2>
+          <p class="section-subtitle">
+            I'm always open to new opportunities, freelance work, or interesting collaborations.
+          </p>
+
+          <div class="contact-list">
+            <article class="contact-card">
+              <span class="contact-icon">@</span>
+              <div>
+                <h3>Email</h3>
+                <a href="mailto:komaljpr1996@gmail.com">komaljpr1996@gmail.com</a>
+              </div>
+            </article>
+
+            <article class="contact-card">
+              <span class="contact-icon">in</span>
+              <div>
+                <h3>LinkedIn</h3>
+                <a href="https://www.linkedin.com/in/komal-kanwar-a25a11198/" target="_blank" rel="noopener">linkedin.com/in/komal-kanwar-a25a11198</a>
+              </div>
+            </article>
+
+            <article class="contact-card">
+              <span class="contact-icon">ok</span>
+              <div>
+                <h3>Availability</h3>
+                <p>Available for freelance projects and full-time opportunities.</p>
+              </div>
+            </article>
           </div>
         </div>
-
-        <div
-          class="block rounded-xl overflow-hidden shadow-lg glass transition transform hover:-translate-y-2 hover:scale-102">
-          <img src="./images/health.jpg" class="w-full  object-cover" />
-          <div class="p-4 bg-gray-900 h-full">
-            <h4 class="font-semibold">Your Mental Health Pal</h4>
-            <p class="text-sm text-gray-300 mt-2">Worked on a few selected pages of this website along with my senior.
-              My responsibilities included designing page layouts and converting them into clean, responsive HTML & CSS
-              while maintaining consistency with the existing website design.</p>
-            <div class="mt-3">
-              <a href="https://yourmentalhealthpal.com/" class="text-xs px-3 py-1 rounded bg-[#071122] inline-block ">
-                Live
-              </a>
-            </div>
-          </div>
-        </div>
-
-
-
       </div>
+    </section>
+  </main>
 
-
-      <div class="grid md:grid-cols-3 gap-6 mb-10">
-
-        <!-- card -->
-        <div
-          class="block rounded-xl overflow-hidden shadow-lg glass transition transform hover:-translate-y-2 hover:scale-102">
-          <img src="./images/univers_ads.jpg" class="w-full  object-cover" />
-          <div class="p-4 bg-gray-900 h-full">
-            <h4 class="font-semibold">Universe Ads</h4>
-            <p class="text-sm text-gray-300 mt-2">This is an advertising website. I built the complete front-end from
-              scratch using HTML and CSS, creating a clean and fully responsive layout with a simple and user-friendly
-              design.</p>
-            <div class="mt-3">
-              <a href="https://universeads.net/" class="text-xs px-3 py-1 rounded bg-[#071122] inline-block ">
-                Live
-              </a>
-            </div>
-          </div>
-        </div>
-
-        <div
-          class="block rounded-xl overflow-hidden shadow-lg glass transition transform hover:-translate-y-2 hover:scale-102">
-          <img src="./images/4suk.jpg" class="w-full  object-cover" />
-          <div class="p-4 bg-gray-900 h-full">
-            <h4 class="font-semibold">4SUK Consulting</h4>
-            <p class="text-sm text-gray-300 mt-2">This is a UK-based technology consulting website offering networking
-              and IT solutions. I worked on coding selected pages using HTML,CSS ,Bootstrap and updated them to match
-              the existing design and structure of the site.</p>
-            <div class="mt-3">
-              <a href="https://4sukconsulting.co.uk/" class="text-xs px-3 py-1 rounded bg-[#071122] inline-block ">
-                Live
-              </a>
-            </div>
-          </div>
-        </div>
-
-        <div
-          class="block rounded-xl overflow-hidden shadow-lg glass transition transform hover:-translate-y-2 hover:scale-102">
-          <img src="./images/detech_helden.jpg" class="w-full  object-cover" />
-          <div class="p-4 bg-gray-900 h-full">
-            <h4 class="font-semibold">DeTech Helden</h4>
-            <p class="text-sm text-gray-300 mt-2">Interactive mobile screens and prototypes.I converted Figma designs
-              into a fully functional, animated website using HTML, CSS, Bootstrap, and JavaScript. The site features
-              smooth animations and responsive layout to ensure a modern user experience.</p>
-            <div class="mt-3">
-              <a href="https://detechhelden.nl/" class="text-xs px-3 py-1 rounded bg-[#071122] inline-block ">
-                Live
-              </a>
-            </div>
-          </div>
-        </div>
-
-
-
-      </div>
-
-
-      <div class="grid md:grid-cols-3 gap-6 mb-10">
-
-        <!-- card -->
-        <div
-          class="block rounded-xl overflow-hidden shadow-lg glass transition transform hover:-translate-y-2 hover:scale-102">
-          <img src="./images/e_learning.jpg" class="w-full  object-cover" />
-          <div class="p-4 bg-gray-900 h-full">
-            <h4 class="font-semibold">Grads Centre</h4>
-            <p class="text-sm text-gray-300 mt-2">This is an education and career-guidance website. I worked on this
-              project along with my senior, handling front-end tasks in HTML, CSS, and Bootstrap to build responsive
-              information pages.</p>
-            <div class="mt-3">
-              <a href="http://gradscentre.com/" class="text-xs px-3 py-1 rounded bg-[#071122]">
-                Live
-              </a>
-            </div>
-          </div>
-        </div>
-
-        <div
-          class="block rounded-xl overflow-hidden shadow-lg glass transition transform hover:-translate-y-2 hover:scale-102">
-          <img src="./images/school.jpg" class="w-full  object-cover" />
-          <div class="p-4 bg-gray-900 h-full">
-            <h4 class="font-semibold">Sapiens Group</h4>
-            <p class="text-sm text-gray-300 mt-2">This is a school/education website, and I developed the entire
-              front-end myself. I built all the pages using HTML, CSS, and responsive design techniques, focusing on a
-              clean layout and a smooth user experience across devices.</p>
-            <div class="mt-3">
-              <a href="https://sapiensgroup.in/" class="text-xs px-3 py-1 rounded bg-[#071122]">
-                Live
-              </a>
-            </div>
-          </div>
-        </div>
-
-        <div
-          class="block rounded-xl overflow-hidden shadow-lg glass transition transform hover:-translate-y-2 hover:scale-102">
-
-          <img src="./images/prolense.jpg" class="w-full object-cover" />
-
-          <div class="p-4 bg-gray-900 h-full">
-            <h4 class="font-semibold">Prolense</h4>
-
-            <p class="text-sm text-gray-300 mt-2">
-              This is a photography website that I built together with my junior. I contributed to a few front-end
-              sections using HTML, CSS, and Bootstrap, mainly handling page coding and basic responsive adjustments.
-            </p>
-
-            <!-- Only LIVE button -->
-            <div class="mt-3">
-              <a href="https://demo.technoderivation.com/prolense/" class="text-xs px-3 py-1 rounded bg-[#071122]">
-                Live
-              </a>
-            </div>
-          </div>
-        </div>
-
-
-
-
-      </div>
-
-
-      <div class="grid md:grid-cols-3 gap-6 mb-10">
-
-        <!-- card -->
-        <div
-          class="block rounded-xl overflow-hidden shadow-lg glass transition transform hover:-translate-y-2 hover:scale-102">
-          <img src="./images/techno-derivation.jpg" class="w-full  object-cover" />
-          <div class="p-4 bg-gray-900 h-full">
-            <h4 class="font-semibold">Techno Derivation</h4>
-            <p class="text-sm text-gray-300 mt-2">Built an information-based IT company website from a template,
-              collaborating with a senior on front-end development and contributing to Laravel backend functionality.
-            </p>
-            <div class="mt-3">
-              <a href="https://technoderivation.com/" class="text-xs px-3 py-1 rounded bg-[#071122]">
-                Live
-              </a>
-            </div>
-          </div>
-        </div>
-
-
-
-
-
-
-      </div>
-    </div>
-  </section>
-
-
-
-  <!-- Contact Section -->
-  <section class="bg-gray-900 text-white py-16 px-6" id="contact">
-  <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-10 items-center" data-aos="fade-right">
-
-    <!-- Left Side Image -->
-    <div class="flex">
-      <img src="./images/contact.webp" alt="Contact Image"
-        class="w-full max-w-sm md:max-w-md rounded-2xl shadow-xl border border-gray-700 object-cover">
-    </div>
-
-    <!-- Right Side Content -->
-    <div class="space-y-6 md:space-y-8">
-      <h2 class="text-4xl sm:text-5xl md:text-6xl  font-semibold mb-2 sm:mb-4">Contact Me</h2>
-      <p class="text-gray-300 mb-4 sm:mb-6">I'm always open to new opportunities, freelance work, or
-        interesting collaborations. Feel free to reach out!</p>
-
-      <div class="space-y-4 sm:space-y-6">
-
-        <!-- Email -->
-        <div
-          class=" mb-2 flex flex-col sm:flex-row sm:items-center gap-4 bg-gray-800 p-5 rounded-2xl shadow-lg border border-gray-700">
-          <div class="text-blue-400 text-3xl flex-shrink-0">📧</div>
-          <div>
-            <h3 class="text-xl font-semibold">Email</h3>
-            <p class="text-blue-400 font-medium break-words">komaljpr1996@gmail.com</p>
-          </div>
-        </div>
-
-        <!-- LinkedIn -->
-        <div
-          class=" mb-2 flex flex-col sm:flex-row sm:items-center gap-4 bg-gray-800 p-5 rounded-2xl shadow-lg border border-gray-700">
-          <div class="text-blue-400 text-3xl flex-shrink-0">🔗</div>
-          <div>
-            <h3 class="text-xl font-semibold">LinkedIn</h3>
-            <a href="https://www.linkedin.com/in/komal-kanwar-a25a11198/"
-              class="hover:text-blue-400 transition break-words">https://www.linkedin.com/in/komal-kanwar-a25a11198/</a>
-          </div>
-        </div>
-
-        <!-- Availability -->
-        <div
-          class="flex flex-col sm:flex-row sm:items-center gap-4 bg-gray-800 p-5 rounded-2xl shadow-lg border border-gray-700">
-          <div class="text-blue-400 text-3xl flex-shrink-0">🕒</div>
-          <div>
-            <h3 class="text-xl font-semibold">Availability</h3>
-            <p class="text-gray-300">Available for freelance projects & full-time opportunities.</p>
-          </div>
-        </div>
-
-      </div>
-
-    </div>
-
-  </div>
-</section>
-
-
-
-
-  <!-- Footer -->
-  <footer class="bg-gray-800 text-gray-400 py-6 text-center">
-    <p>&copy; 2025 Komal Kanwar. All rights reserved.</p>
-    <!-- <div class="mt-2 space-x-4">
-      <a href="#" class="hover:text-blue-400"><i class="fab fa-linkedin"></i></a>
-      <a href="#" class="hover:text-blue-400"><i class="fab fa-github"></i></a>
-      <a href="#" class="hover:text-blue-400"><i class="fab fa-twitter"></i></a>
-    </div> -->
+  <footer class="site-footer">
+    <p>&copy; 2026 Komal Kanwar. All rights reserved.</p>
   </footer>
 
-
-
-  <!-- tsParticles CDN -->
   <script src="https://cdn.jsdelivr.net/npm/tsparticles@2/tsparticles.bundle.min.js"></script>
-
   <script>
-    AOS.init({ duration: 1000, once: true });
+    const menuToggle = document.getElementById("menuToggle");
+    const navLinks = document.getElementById("navLinks");
 
-    // Mobile menu toggle
-    function toggleMenu() {
-      const menu = document.getElementById("mobileMenu");
-      const icon = document.getElementById("menuIcon");
+    menuToggle.addEventListener("click", () => {
+      const isOpen = navLinks.classList.toggle("is-open");
+      menuToggle.classList.toggle("is-open", isOpen);
+      menuToggle.setAttribute("aria-expanded", String(isOpen));
+      menuToggle.setAttribute("aria-label", isOpen ? "Close menu" : "Open menu");
+    });
 
-      menu.classList.toggle("hidden");
+    navLinks.querySelectorAll("a").forEach((link) => {
+      link.addEventListener("click", () => {
+        navLinks.classList.remove("is-open");
+        menuToggle.classList.remove("is-open");
+        menuToggle.setAttribute("aria-expanded", "false");
+        menuToggle.setAttribute("aria-label", "Open menu");
+      });
+    });
 
-      // Change icon to close
-      if (!menu.classList.contains("hidden")) {
-        icon.name = "close";
-
-
-
-      } else {
-        icon.name = "menu";
-      }
-    }
-    // enhanced typewriter with blinking cursor
-    const text = "Web Designer | Frontend Developer ";
-    let i = 0;
-    document.addEventListener('DOMContentLoaded', () => {
-      function type() {
-        if (i < text.length) {
-          document.getElementById('typewriter').textContent = text.substring(0, i + 1);
-          i++;
-          setTimeout(type, 65);
+    if (window.tsParticles) {
+      tsParticles.load("tsparticles", {
+        fullScreen: { enable: false },
+        fpsLimit: 60,
+        interactivity: {
+          events: {
+            onHover: { enable: true, mode: ["grab", "repulse"] },
+            onClick: { enable: true, mode: "push" }
+          },
+          modes: {
+            grab: { distance: 180, links: { opacity: 0.45 } },
+            repulse: { distance: 110, duration: 0.4 },
+            push: { quantity: 3 }
+          }
+        },
+        particles: {
+          number: { value: 70 },
+          color: { value: ["#38bdf8", "#a78bfa", "#f472b6"] },
+          links: { enable: true, distance: 145, color: "#8b5cf6", opacity: 0.28, width: 1 },
+          move: { enable: true, speed: 1.6 },
+          opacity: { value: 0.55 },
+          shape: { type: "circle" },
+          size: { value: { min: 1, max: 3 } }
         }
-      }
-      type();
-    });
-
-
-
-
-    tsParticles.load("tsparticles", {
-      fullScreen: { enable: false },
-      fpsLimit: 60,
-
-      interactivity: {
-        events: {
-          onHover: {
-            enable: true,
-            mode: ["grab", "repulse"],   // ← 2 effects at once
-          },
-          onClick: {
-            enable: true,
-            mode: "push",  // ← click effect (optional, looks good)
-          },
-        },
-        modes: {
-          grab: {
-            distance: 200,
-            lineLinked: {
-              opacity: 0.5,
-            },
-          },
-          repulse: {
-            distance: 120,
-            duration: 0.4,
-          },
-          push: {
-            quantity: 4,
-          },
-        },
-      },
-
-      particles: {
-        number: {
-          value: 80,
-        },
-        color: {
-          value: ["#6C63FF", "#BB86FC", "#ffffff55"],
-        },
-        shape: {
-          type: "circle",
-        },
-        opacity: {
-          value: 0.6,
-        },
-        size: {
-          value: 3,
-        },
-        line_linked: {
-          enable: true,
-          distance: 150,
-          color: "#6C63FF",
-          opacity: 0.3,
-          width: 1,
-        },
-        move: {
-          enable: true,
-          speed: 2,
-        },
-      },
-    });
-
+      });
+    }
   </script>
-
-
-
 </body>
 
 </html>
-
-
-
-
-
-
-
-
